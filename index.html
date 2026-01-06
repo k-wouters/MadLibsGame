@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mad Libs Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+
+<body onload="homeScreen()">
+  <span id="heading">
+    <h1 onclick="homeScreen()">Mad Libs</h1>
+  </span>
+  <br>
+  <div id="buttonHolder">
+    <h2>Choose a story to get started.</h2>
+    <div id="madLibs1" class="madLibsAll" onclick="openMadLibs1()">
+      <h2>My Favorite Season</h2>
+    </div>
+
+    <div id="madLibs2" class="madLibsAll" onclick="openMadLibs2()">
+      <h2>Sports</h2>
+    </div>
+
+    <div id="madLibs3" class="madLibsAll" onclick="openMadLibs3()">
+      <h2>The Best Singer</h2>
+    </div>
+
+    <div id="madLibs4" class="madLibsAll" onclick="openMadLibs4()">
+      <h2>Packing For A Sleepover</h2>
+    </div>
+
+    <div id="madLibs5" class="madLibsAll" onclick="openMadLibs5()">
+      <h2>Best Movie Ever! </h2>
+    </div>
+
+    <div id="madLibs6" class="madLibsAll" onclick="openMadLibs6()">
+      <h2>Today's Walk</h2>
+    </div>
+    <br>
+  </div>
+
+  <div id="page1" class="pages">
+    <p id="inputs1" class="inputtedAnswers">
+      noun: <input type="text" class="responses1"> <br>
+      verb: <input type="text" class="responses1"><br>
+      verb ending in ing: <input type="text" class="responses1"><br>
+      activity: <input type="text" class="responses1"><br>
+      location: <input type="text" class="responses1"><br>
+      person's name: <input type="text" class="responses1"><br>
+      animal: <input type="text" class="responses1"><br>
+      adjective: <input type="text" class="responses1"><br>
+      noun: <input type="text" class="responses1"> <br>
+      part of body: <input type="text" class="responses1"> <br>
+      adjective: <input type="text" class="responses1"><br>
+      <p class="needsToFinishQuizAll">Your quiz is incomplete! Make sure you enter an answer in all fields to see your story.</p>
+      <button class="submitButtons" onclick="organizeStoryResponses1()">Submit and see my story!</button>
+      <br>
+    </p>
+    <p id="story1" class="stories"></p>
+    <button onclick="homeScreen()">Go Back</button>
+    <br>
+    <br>
+  </div>
+
+  <div id="page2" class="pages">
+    <p id="inputs2" class="inputtedAnswers">
+      adjective: <input type="text" class="responses2"><br>
+      sport: <input type="text" class="responses2"><br>
+      number: <input type="text" class="responses2"><br>
+      adverb: <input type="text" class="responses2"><br>
+      person's name: <input type="text" class="responses2"><br>
+      plural noun: <input type="text" class="responses2"><br>
+      part of the body: <input type="text" class="responses2"><br>
+      noun: <input type="text" class="responses2"><br>
+      person's name: <input type="text" class="responses2"><br>
+      adjective: <input type="text" class="responses2"><br>
+      verb: <input type="text" class="responses2"><br>
+      place: <input type="text" class="responses2"><br>
+      adjective: <input type="text" class="responses2"><br>
+      person's name: <input type="text" class="responses2"><br>
+      <p class="needsToFinishQuizAll">Your quiz is incomplete! Make sure you enter an answer in all fields to see your story.</p>
+      <button class="submitButtons" onclick="organizeStoryResponses2()">Submit and see my story!</button>
+      <br>
+    </p>
+    <p id="story2" class="stories"></p>
+    <button onclick="homeScreen()">Go Back</button>
+    <br>
+    <br>
+  </div>
+
+  <div id="page3" class="pages">
+    <p id="inputs3" class="inputtedAnswers">
+      musician or singer: <input type="text" class="responses3"><br>
+      adverb: <input type="text" class="responses3"><br>
+      number: <input type="text" class="responses3"><br>
+      animal: <input type="text" class="responses3"><br>
+      number: <input type="text" class="responses3"><br>
+      adjective: <input type="text" class="responses3"><br>
+      instrument: <input type="text" class="responses3"><br>
+      emotion: <input type="text" class="responses3"><br>
+      noun: <input type="text" class="responses3"><br>
+      person's name: <input type="text" class="responses3"><br>
+      verb: <input type="text" class="responses3"><br>
+      adverb: <input type="text" class="responses3"><br>
+      <p class="needsToFinishQuizAll">Your quiz is incomplete! Make sure you enter an answer in all fields to see your story.</p>
+      <button class="submitButtons" onclick="organizeStoryResponses3()">Submit and see my story!</button>
+      <br>
+    </p>
+    <p id="story3" class="stories"></p>
+    <button onclick="homeScreen()">Go Back</button>
+    <br>
+    <br>
+  </div>
+
+  <div id="page4" class="pages">
+    <p id="inputs4" class="inputtedAnswers">
+      emotion: <input type="text" class="responses4"><br>
+      person's name: <input type="text" class="responses4"><br>
+      noun: <input type="text" class="responses4"><br>
+      noun: <input type="text" class="responses4"><br>
+      item of clothing: <input type="text" class="responses4"><br>
+      verb: <input type="text" class="responses4"><br>
+      time of day: <input type="text" class="responses4"><br>
+      adjective: <input type="text" class="responses4"><br>
+      noun: <input type="text" class="responses4"><br>
+      noun: <input type="text" class="responses4"><br>
+      verb ending in ing: <input type="text" class="responses4"><br>
+      adjective: <input type="text" class="responses4"><br>
+      <p class="needsToFinishQuizAll">Your quiz is incomplete! Make sure you enter an answer in all fields to see your story.</p>
+      <button class="submitButtons" onclick="organizeStoryResponses4()">Submit and see my story!</button>
+      <br>
+    </p>
+    <p id="story4" class="stories"></p>
+    <button onclick="homeScreen()">Go Back</button>
+    <br>
+    <br>
+  </div>
+
+  <div id="page5" class="pages">
+    <p id="inputs5" class="inputtedAnswers">
+      book title: <input type="text" class="responses5"><br>
+      emotion: <input type="text" class="responses5"><br>
+      adjective: <input type="text" class="responses5"><br>
+      past tense verb: <input type="text" class="responses5"><br>
+      celebrity: <input type="text" class="responses5"><br>
+      adjective: <input type="text" class="responses5"><br>
+      adjective: <input type="text" class="responses5"><br>
+      part of the body (plural): <input type="text" class="responses5"><br>
+      adjective: <input type="text" class="responses5"><br>
+      noun: <input type="text" class="responses5"><br>
+      <p class="needsToFinishQuizAll">Your quiz is incomplete! Make sure you enter an answer in all fields to see your story.</p>
+      <button class="submitButtons" onclick="organizeStoryResponses5()">Submit and see my story!</button>
+      <br>
+    </p>
+    <p id="story5" class="stories"></p>
+    <button onclick="homeScreen()">Go Back</button>
+    <br>
+    <br>
+  </div>
+
+  <div id="page6" class="pages">
+    <p id="inputs6" class="inputtedAnswers">
+      adjective: <input type="text" class="responses6"><br>
+      person's name: <input type="text" class="responses6"><br>
+      past tense verb: <input type="text" class="responses6"><br>
+      number: <input type="text" class="responses6"><br>
+      adjective: <input type="text" class="responses6"><br>
+      animal: <input type="text" class="responses6"><br>
+      adjective: <input type="text" class="responses6"><br>
+      animal: <input type="text" class="responses6"><br>
+      verb: <input type="text" class="responses6"><br>
+      vehicle: <input type="text" class="responses6"><br>
+      interjection: <input type="text" class="responses6"><br>
+      adjective: <input type="text" class="responses6"><br>
+      <p class="needsToFinishQuizAll">Your quiz is incomplete! Make sure you enter an answer in all fields to see your story.</p>
+      <button class="submitButtons" onclick="organizeStoryResponses6()">Submit and see my story!</button>
+      <br>
+    </p>
+    <p id="story6" class="stories"></p>
+    <button onclick="homeScreen()">Go Back</button>
+    <br>
+    <br>
+  </div>
+  <br>
+  <br>
+  <script src="script.js"></script>
+</body>
+</html>
